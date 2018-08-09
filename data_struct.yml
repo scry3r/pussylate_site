@@ -1,0 +1,103 @@
+---
+ Data_structure:
+ Prod:
+Catalogs:
+    Books:
+     adult:
+     - corean
+     - japanese
+     - russian
+     - chinese
+     - english
+     norm:
+     - corean
+     - japanese
+     - russian
+     - chinese
+     - english
+    Comics:
+     - corean
+     - japanese
+     - russian
+     - chinese
+     - english
+Dev:
+Catalogs:
+    Books:
+     adult:
+     - corean
+     - japanese
+     - russian
+     - chinese
+     - english
+     norm:
+     - corean
+     - japanese
+     - russian
+     - chinese
+     - english
+    Comics:
+     - corean
+     - japanese
+     - russian
+     - chinese
+     - english
+
+Tags:
+  Genres:
+    -
+    -
+    -
+  Custom_genres:
+    -
+    -
+    -
+
+Rate:
+  - content_rate
+  rate = [ sum: array{ 1,2,3,4,5 } ] / [ rate_cont: n+1 ]
+
+Content:
+  statistic:
+  - state_of_translate
+  - translate_type
+  - date
+  - date_of_last_update
+  - num_of_views
+  - likes
+  sinopsis:
+  - title
+  - original_name
+  - eng_name
+  - ru_name
+  - autor
+  - year
+  - short_transcription
+  slider:
+  - cover_images
+  bookmarks:
+  -
+
+volume_list:
+  - drop_down_list
+  - sub_list
+  - volume_state
+
+user_accounts:
+  - auth_with_social_networks
+resume:
+  - native_lang
+  - gender
+  - avatar
+  - balance (optional)
+  - user_roles
+  - karma_based_on_comments
+when: [ role: translater ]
+  - count_of_translated_cont
+
+roles:
+  - admin
+  - moderator
+  - translater
+  - editor
+  - user

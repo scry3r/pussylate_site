@@ -1,0 +1,27 @@
+---
+ backend:
+content_parameters:
+  allow_share: true
+  allow_modification: false
+  allow_commercial: false
+  use_lightgallery: true
+  allow_comment: true
+  enable_unread_badge: false
+
+copy_denied_func: (optional)
+
+django_py_framework: [ MVC ]
+  - telegram_bot
+  - rrs_feed
+  - mail_sender
+  - comment_system: disqus # disqus, valine, gitment ( plus and minus in comments )
+mongoDB:
+  store_cache_in_redis
+
+counter:
+  likes:
+  - n+1
+  rate:
+  - n+1
+normalised_rate:
+  likes + rate = result

@@ -1,0 +1,41 @@
+---
+ Pages:
+discord_section:
+
+main_page:
+  menu:
+  - home
+  - global_catalog: tree views or drop_down
+  - blog
+  - updates: show_adult: when[ authorised_user ]
+  - become_a_patrone
+  - our_team
+  - social_buttons
+  - account_buttons
+  page_view:
+  - top_cont
+  - poster_images
+  - catalog_listing: norm: last_update [ 10-20 items ] show_adult: when[ authorised_user ]
+  - last_news: 5 items
+go_up_button:
+  -
+
+social_buttons:
+  -
+
+poster_images:
+  lightgallery:
+  - imageMagic_from_whiteblack_to_color
+
+our_team:
+
+Updates: list_of_last_updates: norm [ all_items ]
+ - buttons_show_adult
+ when: age_check_successful
+
+age_check_successful:
+  popup_message_and_check
+
+become_a_patrone:
+  patrone_integration
+  donate
